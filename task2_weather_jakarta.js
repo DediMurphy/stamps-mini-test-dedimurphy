@@ -1,22 +1,3 @@
-/**
- * Mini Test 2: 5-day weather forecast for Jakarta using OpenWeatherMap (free tier).
- *
- * Setup:
- *   1. Get a free API key at https://home.openweathermap.org/users/sign_up
- *   2. Set it as an environment variable (DO NOT hardcode it in source code):
- *        Windows (cmd):   set OWM_API_KEY=your_key_here
- *        Windows (PS):    $env:OWM_API_KEY="your_key_here"
- *        macOS/Linux:     export OWM_API_KEY=your_key_here
- *   3. Requires Node.js 18+ (built-in fetch). No extra packages needed.
- *   4. Run:  node task2_weather_jakarta.js
- *
- * Uses the free "5 day / 3 hour" forecast endpoint and picks ONE reading per
- * day (the slot closest to 12:00) to satisfy "only one temperature per day".
- *
- * Output format example:
- *   Fri, 23 Apr 2026: 16.7°C
- */
-
 const API_KEY = process.env.OWM_API_KEY;
 const CITY = "Jakarta,ID";
 const BASE_URL = "https://api.openweathermap.org/data/2.5/forecast";
